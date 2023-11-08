@@ -1,12 +1,17 @@
 function showTime() {
     var updateClock = function () {
         var date = new Date();
-        var h = date.getHours() % 12 || 12;
+        var h = date.getHours();
         var m = date.getMinutes();
         var s = date.getSeconds();
         var session = h < 12 ? "AM" : "PM";
 
-        var time = h + ":" + (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s + " " + session;
+        // Ensure hours, minutes, and seconds are two digits
+        h = ("0" + h).slice(-2);
+        m = ("0" + m).slice(-2);
+        s = ("0" + s).slice(-2);
+
+        var time = h + ":" + m + ":" + s + " " + session;
 
         document.getElementById("MyClockDisplay").innerText = time;
         document.getElementById("MyClockDisplay").textContent = time;
@@ -16,7 +21,6 @@ function showTime() {
         document.getElementById("DateDisplay").innerText = today;
         document.getElementById("DateDisplay").textContent = today;
     };
-
     updateClock();
 
     setInterval(updateClock, 1000);
