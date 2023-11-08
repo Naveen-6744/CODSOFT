@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Software Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="menu">
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#work-experience">About Me</a></li>
+                            <li><a href="/">Projects</a></li>
+                            <li><a href="/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <h1 class="header-title">Naveen's Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is<br><span class="purple">Naveen</span>
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="download-resume-btn">Download Resume</button>
+                    <button class="visit-github-btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="https://www.cyberark.com/wp-content/uploads/2019/11/Developer.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <section id="work-experience"></section>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Web Developer
+                        <span>(2010-2012)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Web developers create the online experiences that connect and engage people across the internet.
+                    </div>
+                </div>
+                  <div class="vertical">
+                    <div class="vertical-title">
+                        Graphic Designer
+                        <span>(2012-2015)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Graphic design brings visual creativity to life, combining artistic expression and design for compelling visuals.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Animator
+                        <span>(2015-2017)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        An animator breathes life into illustrations, making them move, creating captivating storytelling through motion.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class "vertical-title">
+                        Software Engineer
+                        <span>(2017-2020)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Software engineers craft the digital world, building the technology that powers our lives and shapes our future
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Ethical Hacker
+                        <span>(2020-2023)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Ethical hackers safeguard digital security by identifying and addressing vulnerabilities, fortifying systems against cyber threats.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Game Developer
+                        <span>(2023-Present)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Game developer designs, codes, and creates video games, ensuring gameplay, graphics, and functionality meet player expectations.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Naveen's Software Engineer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+             <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.linkedin.com">Linkedin</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="skype:yourusername">Skype</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; naveensportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Graphic Designer', 'Web Developer', 'Animator', 'Software Engineer', 'Ethical Hacker', 'Game Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
